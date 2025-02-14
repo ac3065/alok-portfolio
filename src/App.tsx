@@ -92,6 +92,7 @@ function App() {
     'Contact'
   ];
 
+  
   return (
     <div ref={containerRef} className="bg-[#0a192f] text-gray-100 min-h-screen" data-scroll-container>
       {/* Navigation */}
@@ -366,59 +367,76 @@ function App() {
       </section>
 
       {/* Achievements Section */}
-      <section id="achievements" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#112240]" data-scroll-section>
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-[#64ffda]">Achievements</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* DSA Problem Solving */}
-            <div className="bg-[#0a192f] p-8 rounded-lg border border-[#233554] transform hover:scale-105 transition-transform">
-              <div className="flex items-center justify-between mb-6">
-                <img
-                  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
-                  alt="LeetCode"
-                  className="w-12 h-12"
-                />
-                <span className="text-4xl font-bold text-[#64ffda]">70+</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">LeetCode Problems</h3>
-              <p className="text-gray-400">Solved various DSA problems ranging from easy to hard difficulty</p>
-            </div>
+<section id="achievements" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#112240]" data-scroll-section>
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-3xl font-bold mb-12 text-[#64ffda]">Achievements</h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      {/* LeetCode */}
+      <div 
+        className="bg-[#0a192f] p-8 rounded-lg border border-[#233554] transform hover:scale-105 transition-transform cursor-pointer"
+        onClick={() => window.open("https://leetcode.com/u/RaceBegun/", "_blank")}
+      >
+        <div className="flex items-center justify-between mb-6">
+          <img
+            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
+            alt="LeetCode"
+            className="w-12 h-12"
+          />
+          <span className="text-4xl font-bold text-[#64ffda]">70+</span>
+        </div>
+        <h3 className="text-xl font-bold mb-2">LeetCode Problems</h3>
+        <p className="text-gray-400">Solved various DSA problems ranging from easy to hard difficulty</p>
+      </div>
 
-            {/* GeeksForGeeks */}
-            <div className="bg-[#0a192f] p-8 rounded-lg border border-[#233554] transform hover:scale-105 transition-transform">
-              <div className="flex items-center justify-between mb-6">
-                <img
-                  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
-                  alt="GeeksForGeeks"
-                  className="w-12 h-12"
-                />
-                <span className="text-4xl font-bold text-[#64ffda]">320+</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">GFG Problems</h3>
-              <p className="text-gray-400">Solved DSA problems and contributed to the GFG community</p>
-            </div>
+     {/* GeeksForGeeks */}
+<div 
+  className="bg-[#0a192f] p-8 rounded-lg border border-[#233554] transform hover:scale-105 transition-transform cursor-pointer"
+  onClick={() => window.open("https://auth.geeksforgeeks.org/user/alokc7pop/", "_blank")}
+>
+  <div className="flex items-center justify-between mb-6">
+    <img
+      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg"
+      alt="GeeksForGeeks"
+      className="w-12 h-12"
+    />
+    <span className="text-4xl font-bold text-[#64ffda]">320+</span>
+  </div>
+  <h3 className="text-xl font-bold mb-2">GFG Problems</h3>
+  <p className="text-gray-400">Solved DSA problems and contributed to the GFG community</p>
+</div>
 
-            {/* Other Achievement */}
-            {/* <div className="bg-[#0a192f] p-8 rounded-lg border border-[#233554] transform hover:scale-105 transition-transform">
-              <div className="flex items-center justify-between mb-6">
-                <Trophy className="w-12 h-12 text-[#64ffda]" />
-                <span className="text-4xl font-bold text-[#64ffda]">5+</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Hackathons</h3>
-              <p className="text-gray-400">Participated and won in various coding competitions</p>
 
-            </div> */}
+  {/* Additional Achievements - Diary Style */}
+  <div className="bg-[#0a192f] p-8 rounded-lg border border-[#233554] transform hover:scale-105 transition-transform shadow-lg relative diary-box">
+        <h3 className="text-xl font-bold text-[#64ffda] mb-4">My Achievements</h3>
+        <div className="text-gray-300 space-y-3">
+          <div className="border-l-4 border-[#64ffda] pl-4">
+            <p>📌 GFG Institute <span className="text-[#64ffda] font-semibold">Rank 8</span> out of <span className="text-[#64ffda] font-semibold">1100+</span> students.</p>
+          </div>
+          <div className="border-l-4 border-[#64ffda] pl-4">
+            <p>📌 Solved <span className="text-[#64ffda] font-semibold">400+</span> DSA Problems across different platforms.</p>
+          </div>
+          <div className="border-l-4 border-[#64ffda] pl-4">
+            <p>📌 Contributed to <span className="text-[#64ffda] font-semibold">SWOC [Social Winter of Code Season-5]</span>, enhancing project features with impactful code and successful PRs.</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Certifications Section */}
-      <section id="certifications" className="py-20 px-4 sm:px-6 lg:px-8" data-scroll-section>
+    </div>
+  </div>
+</section>
+
+          {/* Certifications Section */}
+          <section id="certifications" className="py-20 px-4 sm:px-6 lg:px-8" data-scroll-section>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-[#64ffda]">Certifications</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Udemy Certification */}
-            <div className="bg-[#112240] p-8 rounded-lg transform hover:scale-105 transition-transform">
+            <div 
+              className="bg-[#112240] p-8 rounded-lg transform hover:scale-105 transition-transform cursor-pointer"
+              onClick={() => window.open('https://www.udemy.com/certificate/UC-c9c0266f-7a00-49e7-b0cc-8600e4680e6d/', '_blank')}
+            >
               <div className="flex items-center gap-4 mb-6">
                 <img
                   src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
@@ -426,7 +444,7 @@ function App() {
                   className="w-24"
                 />
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2">The Complete Web Development Bootcamp</h3>
+                  <h3 className="text-xl font-bold mb-2">Node.js, Express, MongoDB & More: The Complete Bootcamp</h3>
                   <p className="text-gray-400">Udemy</p>
                 </div>
               </div>
@@ -435,12 +453,15 @@ function App() {
               </p>
               <div className="flex items-center gap-2 text-[#64ffda]">
                 <Award size={16} />
-                <span>Issued Jan 2024</span>
+                <span>Issued Feb 2025</span>
               </div>
             </div>
 
             {/* Add more certifications as needed */}
-            <div className="bg-[#112240] p-8 rounded-lg transform hover:scale-105 transition-transform">
+            <div 
+              className="bg-[#112240] p-8 rounded-lg transform hover:scale-105 transition-transform cursor-pointer"
+              onClick={() => window.open('https://www.example.com/udemy-react-redux-cert', '_blank')}
+            >
               <div className="flex items-center gap-4 mb-6">
                 <img
                   src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
@@ -527,15 +548,16 @@ function App() {
                 </p>
               </div>
               <div className="space-y-4">
-                <a href="mailto:alokc03655@gmail.com" className="flex items-center gap-3 text-gray-400 hover:text-[#64ffda] transition-colors">
-                  <Mail size={20} />
-                  alokc03655@gmail.com
-                </a>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-[#64ffda] transition-colors">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alokc03655@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-[#64ffda] transition-colors">
+  <Mail size={20} />
+  alokc03655@gmail.com
+</a>
+
+                <a href="https://github.com/ac3065" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-[#64ffda] transition-colors">
                   <Github size={20} />
                   github.com/yourusername
                 </a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-[#64ffda] transition-colors">
+                <a href="https://www.linkedin.com/in/alok-chauhan-32ab7b254/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-400 hover:text-[#64ffda] transition-colors">
                   <Linkedin size={20} />
                   linkedin.com/in/yourusername
                 </a>
