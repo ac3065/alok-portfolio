@@ -5,7 +5,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LocomotiveScroll from 'locomotive-scroll';
 
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -174,7 +173,7 @@ function App() {
           </div>
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#64ffda] flex-shrink-0">
             <img
-              src="./images1/Myself.jpg"
+             src="/alok-portfolio/Myself.jpg"
               alt="Image"
               className="w-full h-full object-cover"
             />
@@ -277,14 +276,14 @@ function App() {
               {
                 title: 'Real time Device Track',
                 description: 'A real-time device tracking system built with Express.js and modern web technologies. This project enables users to track devices efficiently with real-time updates and secure data handling.',
-                image: './images1/map.png',
+                image: '/alok-portfolio/map.png',
                 github: 'https://github.com/ac3065/Live-Tracking-Device?tab=readme-ov-file',
                 demo: 'https://ecommerce-demo.com',
               },
               {
                 title: 'Travel PackMate',
                 description: 'PackTrack – A React-based packing organizer that helps you efficiently manage your travel essentials. Easily track, sort, and check off items as you pack. ',
-                image: './images1/p2.png',
+                image: '/alok-portfolio/p2.png',
                 github: 'https://github.com/ac3065/Reactjs/tree/UpdatedTravel_list_App',
                 demo: 'https://task-manager-demo.com',
               },
